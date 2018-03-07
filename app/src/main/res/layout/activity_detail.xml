@@ -11,7 +11,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryLight">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -41,15 +42,16 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/image_iv" />
+                app:layout_constraintTop_toBottomOf="@+id/description_tv" />
 
             <View
                 android:layout_width="0dp"
                 android:layout_height="1dp"
+                android:layout_marginTop="8dp"
                 android:background="@color/colorPrimaryDark"
-                app:layout_constraintTop_toBottomOf="@id/tv_aka_label"
-                app:layout_constraintStart_toStartOf="@id/tv_aka_label"
-                app:layout_constraintEnd_toEndOf="@id/tv_aka_label"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/also_known_tv" />
 
             <TextView
                 android:id="@+id/also_known_tv"
@@ -65,11 +67,11 @@
 
             <TextView
                 android:id="@+id/tv_origin_label"
+                style="@style/DetailsLabelStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/DetailsLabelStyle"
                 android:text="@string/detail_place_of_origin_label"
-                app:layout_constraintStart_toStartOf="@+id/tv_aka_label"
+                app:layout_constraintStart_toStartOf="@+id/also_known_tv"
                 app:layout_constraintTop_toBottomOf="@+id/also_known_tv" />
 
             <View
@@ -133,21 +135,21 @@
 
             <TextView
                 android:id="@+id/tv_description_label"
+                style="@style/DetailsLabelStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/DetailsLabelStyle"
+                android:layout_marginTop="8dp"
                 android:text="@string/detail_description_label"
                 app:layout_constraintStart_toStartOf="@+id/tv_ingredients_label"
-                app:layout_constraintTop_toBottomOf="@+id/ingredients_tv" />
+                app:layout_constraintTop_toBottomOf="@+id/image_iv" />
 
             <View
                 android:id="@+id/view23"
                 android:layout_width="0dp"
                 android:layout_height="1dp"
+                android:layout_marginTop="8dp"
                 android:background="@color/colorPrimaryDark"
-                app:layout_constraintEnd_toEndOf="@id/tv_description_label"
-                app:layout_constraintStart_toStartOf="@id/tv_description_label"
-                app:layout_constraintTop_toBottomOf="@id/tv_description_label" />
+                app:layout_constraintTop_toBottomOf="@id/description_tv" />
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
 </layout>
