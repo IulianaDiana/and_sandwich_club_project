@@ -68,12 +68,11 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     private void populateUI() {
-        Toast.makeText(DetailActivity.this, sandwich.getMainName(), Toast.LENGTH_SHORT).show();
         mActivityBinding.setSandwich(sandwich);
         mActivityBinding.executePendingBindings();
         String akaString;
         if (sandwich.getAlsoKnownAs() == null || sandwich.getAlsoKnownAs().isEmpty()) {
-            akaString = "Its name is the only way it is known";
+            akaString = getString(R.string.its_name_is_the_only_way_it_is_known);
         } else {
             StringBuilder akaStringBuilder = new StringBuilder();
             for (String aka : sandwich.getAlsoKnownAs()) {
@@ -95,7 +94,7 @@ public class DetailActivity extends AppCompatActivity {
 
         String placeOfOrigin;
         if (sandwich.getPlaceOfOrigin() == null || sandwich.getPlaceOfOrigin().isEmpty()) {
-            placeOfOrigin = "Unknown";
+            placeOfOrigin = getString(R.string.unknown);
         } else {
             placeOfOrigin = sandwich.getPlaceOfOrigin();
         }

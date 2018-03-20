@@ -4,7 +4,7 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="activity_horizontal_padding">16dp</dimen>
     <dimen name="activity_vertical_padding">16dp</dimen>
-    <dimen name="activity_horizontal_padding_small">8dp</dimen>
-    <dimen name="activity_vertical_padding_small">8dp</dimen>
+    <dimen name="spacing_8">8dp</dimen>
+    <dimen name="spacing_32">32dp</dimen>
     <dimen name="size_40">40dp</dimen>
 </resources>

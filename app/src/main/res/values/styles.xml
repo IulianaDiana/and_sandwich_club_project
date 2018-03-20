@@ -12,6 +12,7 @@
         <item name="android:layout_marginRight">16dp</item>
         <item name="android:layout_marginLeft">0dp</item>
         <item name="android:layout_marginTop">8dp</item>
+        <item name="android:lineSpacingMultiplier">1.25</item>
         <item name="android:textColor">@color/secondaryTextColor</item>
         <item name="android:textSize">14sp</item>
     </style>
